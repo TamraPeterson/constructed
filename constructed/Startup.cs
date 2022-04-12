@@ -39,6 +39,8 @@ namespace constructed
       services.AddScoped<ContractorsService>();
       services.AddScoped<CompaniesRepository>();
       services.AddScoped<CompaniesService>();
+      services.AddScoped<JobsRepository>();
+      services.AddScoped<JobsService>();
     }
 
     private void ConfigureCors(IServiceCollection services)

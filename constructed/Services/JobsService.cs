@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using constructed.Models;
 using constructed.Repositories;
@@ -14,6 +15,11 @@ namespace constructed.Services
     internal List<Job> GetAllCompanyJobs(int id)
     {
       return _jr.GetAllCompanyJobs(id);
+    }
+
+    internal Job Create(Job jobData)
+    {
+      return _jr.Create(jobData);
     }
   }
 }
